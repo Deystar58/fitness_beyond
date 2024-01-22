@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/catalogo.css"
+    />
+    <title>Productos</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img
+          src="/images/BEYOND_LOGO-8.png"
+          alt="logo"
+        />
+        <div class="logo"><a href="Index.html">Fitness Beyond</a></div>
+        <ul class="links">
+          <li>
+            <a href="/Proyecto Fitness Beyond/Index.html">Quiénes Somos</a>
+          </li>
+          <li>
+            <a href="/Proyecto Fitness Beyond/catalogo/index.html">Servicios</a>
+          </li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <ul style="margin-right: 1em">
+            <li>
+              <input
+                type="text"
+                placeholder="Nombre de usuario"
+                class="login-input"
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                class="login-input"
+              />
+            </li>
+            <li style="margin-top: 0.5em">
+              <a href="#" class="action_btn">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </ul>
+        <a href="/Proyecto Fitness Beyond/perfil/index.html" class="action_btn"
+          >Perfil</a
+        >
+        <label class="night" id="night-mode-btn">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div class="dropdown_menu open" id="dropdown-menu">
+        <label class="night" for="night-mode-btn-dropdown">
+          <input type="checkbox" id="night-mode-btn-dropdown" />
+          <span class="slider"></span>
+        </label>
+        <li><a href="/Proyecto Fitness Beyond/Index.html">Quiénes Somos</a></li>
+        <li>
+          <a href="/Proyecto Fitness Beyond/catalogo/index.html">Servicios</a>
+        </li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Redes Sociales</a></li>
+        <li>
+          <a
+            href="/Proyecto Fitness Beyond/perfil/index.html"
+            class="action_btn"
+            >Perfil</a
+          >
+        </li>
+        <li>
+          <input
+            type="text"
+            placeholder="Nombre de usuario"
+            class="login-input"
+          />
+        </li>
+        <li>
+          <input type="password" placeholder="Contraseña" class="login-input" />
+        </li>
+        <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+      </div>
+    </header>
+    <main>
+      <div class="gallery">
+        <h2>Recetas Fitness</h2>
+        <button
+          id="btn_recetario"
+          class="action_btn"
+          onclick="window.location.href='productos/producto1.html'"
+        >
+          <h2>Recetario fitness</h2>
+        </button>
+        <div class="content">
+          <map name="product-link">
+            <area
+              shape="rect"
+              coords="0,0,100%,100%"
+              href="/Proyecto Fitness Beyond/catalogo/productos/producto1.html"
+              alt=""
+            />
+          </map>
+          <h3>Pollo Libanés</h3>
+          <img
+            src="../images/recetas/p_libanes.jpg"
+            alt=""
+            usemap="#product-link"
+          /><!--imagen mapeada-->
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Ensalada César</h3>
+          <img src="../images/recetas/e_césar.jpg" alt="" />
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>overnight oats</h3>
+          <img src="../images/recetas/o_oats.jpg" alt="" />
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>revuelto verduras</h3>
+          <img src="../images/recetas/rev_verduras.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Burrito tikka massala</h3>
+          <img src="../images/recetas/b_tikka.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Tallarines con verdura</h3>
+          <img src="../images/recetas/t_ternera.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Pollo Agrridulce</h3>
+          <img src="../images/recetas/p_ss.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Tarta de queso</h3>
+          <img src="../images/recetas/tarta_queso.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Pulpo a la vinagreta</h3>
+          <img src="../images/recetas/Pulpo_vinagreta.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Piadina j.serrano</h3>
+          <img src="../images/recetas/pia_serrano.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3>Arroz frito con huevo</h3>
+          <img src="../images/recetas/alo_flito.jpg" alt="" />
+
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2 id="contacto">Información de contacto</h2>
+      <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+        <li><a href="#">Programas de Entrenamiento</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+      <div class="container-buttons">
+        <a href="#" class="two"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
+        <a href="#" class="four"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a7d1ad6a60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/beyond.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--index principal-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="/images/BEYOND_LOGO-8.png" alt="logo" />
+        <div class="logo"><a href="/Index.html">Fitness Beyond</a></div>
+        <ul class="links">
+          <li><a href="Index.html">Quiénes Somos</a></li>
+          <li><a href="catalogo/index.html">Servicios</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <ul style="margin-right: 1em">
+            <li>
+              <input
+                type="text"
+                placeholder="Nombre de usuario"
+                class="login-input"
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                placeholder="Contraseña"
+                class="login-input"
+              />
+            </li>
+            <li style="margin-top: 0.5em">
+              <a href="#" class="action_btn">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </ul>
+        <a href="perfil/index.html" class="action_btn">Perfil</a>
+        <label class="night" id="night-mode-btn">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div class="dropdown_menu open" id="dropdown-menu">
+        <label class="night" for="night-mode-btn-dropdown">
+          <input type="checkbox" id="night-mode-btn-dropdown" />
+          <span class="slider"></span>
+        </label>
+        <li><a href="Index.html">Quiénes Somos</a></li>
+        <li><a href="catalogo/index.html">Servicios</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Redes Sociales</a></li>
+        <li><a href="perfil/index.html" class="action_btn">Perfil</a></li>
+        <li>
+          <input
+            type="text"
+            placeholder="Nombre de usuario"
+            class="login-input"
+          />
+        </li>
+        <li>
+          <input type="password" placeholder="Contraseña" class="login-input" />
+        </li>
+        <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+      </div>
+    </header>
+    <section class="contenido_lateral">
+      <main class="main_index">
+        <section id="marketingCarousel" class="p-0">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="container flex-wrap text-start">
+                <h3 class="text-white text-uppercase w-100 fw-bold">
+                  Intake Diario
+                </h3>
+                <img src="images/intake.jpg" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container flex-wrap text-start">
+                <h3 class="text-white text-uppercase w-100 fw-bold">
+                  Recetas Fitness
+                </h3>
+                <img src="images/recetario.jpg" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="container flex-wrap text-start">
+                <h3 class="text-white text-uppercase w-100 fw-bold">
+                  Mejores Ejercicios
+                </h3>
+                <img src="images/ejercicios.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="general_info night_block">
+          <h2>Servicios</h2>
+          <h3>Intake Diario</h3>
+          <p>
+            Analiza las calorías consumidas en el día añadiendo los productos
+            que vayas consumiendo a lo largo de las comidas. <br />
+            Tendrás una meta predefinida para motivar el cumplimiento de la
+            misma.
+          </p>
+          <h3>Recetas Fitness</h3>
+          <p>
+            Como nuestro servicio más atractivo tenemos las recetas. <br />
+            Una amplia gama de recomendaciones para ir variando tu dieta. <br />
+            El primer paso y el más importante para cumplir tu objetivo fitness.
+          </p>
+          <h3>Mejores Ejercicios</h3>
+          <p>
+            Nuestros entrenadores han recopilado los ejercicios más recomendados
+            para crear buenas rutinas de entrenamiento <br />
+            Introduce los ejercicios que sean compatibles con tu objetivo para
+            optimizar tus resultados
+          </p>
+        </div>
+      </main>
+      <aside>
+        <h2>Noticias destacadas</h2>
+        <article class="destacada night_block">
+          <h3>¡Prueba el nuevo Helado!</h3>
+          <p>
+            Antes que nadie, incluso de añadirla a nuestro necetario, tienes la
+            oprtunidad de probar nuestra receta para helados alta en proteínas y
+            baja en azúcares.
+          </p>
+          <a href="#">Leer más</a>
+        </article>
+        <article class="destacada night_block">
+          <h3>¡Nuevos ejercicios!</h3>
+          <p>
+            Despues de un análisis exhaustivo, nuestro equipo nos trae
+            recomendaciones nuevas para terminar de optimizar vuestros
+            entrenamientos, entérate cómo.
+          </p>
+          <a href="#">Leer más</a>
+        </article>
+      </aside>
+    </section>
+    <footer>
+      <h2 id="contacto">Información de contacto</h2>
+      <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+        <li><a href="#">Programas de Entrenamiento</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+      <div class="container-buttons">
+        <a href="#" class="two"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
+        <a href="#" class="four"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a7d1ad6a60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Proyecto Fitness Beyond/js/beyond.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <title>Pago</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a href="/Index.html"><img src="../images/BEYOND_LOGO-8.png" alt="logo"></a>
+      <div class="logo"><a href="Index.html">Fitness Beyond</a></div>
+      <ul class="links" >
+        <li><a href="/Index.html">Quiénes Somos</a></li>
+        <li><a href="/catalogo/index.html">Servicios</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Redes Sociales</a></li>
+        <ul style="margin-right: 1em;">
+          <li><input type="text" placeholder="Nombre de usuario" class="login-input"></li>
+        <li><input type="password" placeholder="Contraseña" class="login-input"></li>
+        <li style="margin-top: 0.5em;"> <a href="#" class="action_btn">Iniciar Sesión</a></li>
+        </ul>
+      </ul>
+      <a href="/perfil/index.html" class="action_btn">Perfil</a>
+      <label class="night" id="night-mode-btn">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="dropdown_menu open" id="dropdown-menu">
+      <label class="night" for="night-mode-btn-dropdown">
+        <input type="checkbox" id="night-mode-btn-dropdown">
+        <span class="slider"></span>
+      </label>
+        <li><a href="/Index.html">Quiénes Somos</a></li>
+        <li><a href="/catalogo/index.html">Servicios</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Noticias</a></li>
+        <li><a href="">Redes Sociales</a></li>
+        <li> <a href="/perfil/index.html" class="action_btn">Perfil</a></li>
+        <li><input type="text" placeholder="Nombre de usuario" class="login-input"></li>
+        <li><input type="password" placeholder="Contraseña" class="login-input"></li>
+        <li> <a href="#" class="action_btn">Iniciar Sesión</a></li>
+    </div>
+  </header>
+      <Main>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../catalogo/productos/producto1.html">Producto</a></li>
+              <li class="breadcrumb-item"><a href="index.html">Carrito</a></li>
+              <li class="breadcrumb-item"><a href="destinatario.html">Destinatario</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Pago</li>
+              
+            </ol>
+          </nav>
+        <div id="cart">
+            <h1>Método de pago</h1>
+        </div>
+        <div class="container">
+          <div class="discount">
+            <label for="discountCode">Aplicar descuento</label>
+            <input type="text" id="discountCode" placeholder="Ingresa el código">
+            <button id="bdiscount">Aplicar</button>
+            <div id="descuento">
+              <!-- Verifica si hay un descuento aplicado y muestra la información -->
+              <p id="descuento-info" style="display: none;">Descuento del 10% aplicado</p>
+            </div>
+        </div>
+        <div>
+          Total: <span>99,98€</span>
+        </div>
+            <div class="title">
+                <h4>Selecciona un método de pago</h4>
+            </div>
+    
+            <form action="#">
+                <input type="radio" name="payment" id="visa">
+                <input type="radio" name="payment" id="mastercard">
+                <input type="radio" name="payment" id="paypal">
+                <input type="radio" name="payment" id="AMEX">
+    
+    
+                <div class="category">
+                    <label for="visa" class="visaMethod">
+                        <div class="imgName">
+                            <div class="imgContainer visa">
+                                <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                            </div>
+                            <span class="name">VISA</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" ></i></span>
+                    </label>
+    
+                    <label for="mastercard" class="mastercardMethod">
+                        <div class="imgName">
+                            <div class="imgContainer mastercard">
+                                <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                            </div>
+                            <span class="name">Mastercard</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" ></i></span>
+                    </label>
+    
+                    <label for="paypal" class="paypalMethod">
+                        <div class="imgName">
+                            <div class="imgContainer paypal">
+                                <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="">
+                            </div>
+                            <span class="name">Paypal</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" ></i></span>
+                    </label>
+    
+                    <label for="AMEX" class="amexMethod">
+                        <div class="imgName">
+                            <div class="imgContainer AMEX">
+                            </div>
+                            <span class="name">Financiación</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" ></i></span>
+                    </label>
+                </div>
+            </form>
+            <div class="arrows">
+              <a href="destinatario.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+              <a href="resumen.html" class="arrow-right"><i class="fa-solid fa-arrow-right-long"></i></a>
+             </div>
+        </div>
+      </Main>
+      <footer >
+        <h2 id="contacto">Información de contacto</h2>
+            <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Programas de Entrenamiento</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contáctanos</a></li>
+          </ul>
+            <div class="container-buttons">
+              <a href="#" class="two"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
+              <a href="#" class="four"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
+            </div>
+      </footer>
+      <script src="https://kit.fontawesome.com/a7d1ad6a60.js" crossorigin="anonymous"></script>
+    <script src="/js/beyond.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/*En el precio incluyo condiciones de venta y posibles gastos de envío
+no encuentro la propiedad heredada que hace que mi footer y header se vean más pequeños 
+así que investigaré de cara a la siguiente entrega para adaptar el estilo completo al boostrap*/
+:root {
+    --color-primary: #681097;
+    --color-secondary: #080705;
+    --color-background: #FFFFFA;
+    --color-accent: #EDB230;
+    --color-terciary:#7D8491; 
+  }
+body{
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%; }
+  
+.preview {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media screen and (max-width: 768){
+      .tab-pane.active img {
+        width: 100%; 
+        height: auto; 
+        max-height: 5em; 
+      }
+    }
+    @media screen and (max-width: 996px) {
+      .preview {
+        margin-bottom: 20px; } }
+  
+.preview-pic {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  
+  .preview-thumbnail.nav-tabs {
+    border: none;
+    margin-top: 15px; }
+    .preview-thumbnail.nav-tabs li {
+      width: 18%;
+      margin-right: 2.5%; }
+      .preview-thumbnail.nav-tabs li img {
+        max-width: 100%;
+        display: block; }
+      .preview-thumbnail.nav-tabs li a {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border:none;
+      }
+      .preview-thumbnail.nav-tabs li:last-of-type {
+        margin-right: 0; }
+  
+  .tab-content {
+    overflow: hidden; }
+    .tab-content img {
+      width: 100%;
+      -webkit-animation-name: opacity;
+              animation-name: opacity;
+      -webkit-animation-duration: .3s;
+              animation-duration: .3s; }
+  
+  .card {
+    margin-top: 50px;
+    background: var(--color-background);
+    padding: 3em;
+    line-height: 1.5em; 
+    border: 3px solid var(--color-primary);
+    margin-bottom: 1em;
+  }
+
+  
+  @media screen and (min-width: 997px) {
+    .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  
+  .details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .product-title, .price, .sizes {
+    text-transform: UPPERCASE;
+    font-weight: bold; }
+  
+  .checked, .price span, .half-o {
+    color: var(--color-accent); }
+    .fa-star-half-o {
+      color: var(--color-accent);
+    }
+  .product-title, .rating, .product-description, .price, .vote, .sizes {
+    margin-bottom: 15px; }
+  
+  .product-title {
+    margin-top: 0; }
+  
+  .size {
+    margin-right: 10px; }
+    .size:first-of-type {
+      margin-left: 40px; }
+  
+  .color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px; }
+    .color:first-of-type {
+      margin-left: 20px; }
+  
+  .add-to-cart, .like {
+    background: var(--color-accent);
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: var(--color-background);
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    -o-transition: background .3s ease;
+}
+    .add-to-cart:hover, .like:hover {
+      background: var(--color-accent);
+      color: var(--color-background); }
+
+#format{
+  border: 5px solid var(--color-primary);
+}
+.preview-thumbnail.nav-tabs li img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-primary);
+}
+.info-icon {
+  font-size: 1.5em;
+  color: var(--color-primary);
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.info-icon:hover{
+  color: var(--color-accent);
+}
+.night-mode .card{
+  background-color: var(--color-terciary);
+}
+.price {
+  color: var(--color-secondary);
+}
+.night-mode .price,.night-mode h3,.night-mode h4{
+  color: var(--color-background);
+}
+.night-mode .add-to-cart, .like{
+  background-color: var(--color-primary);
+}
+.night-mode select{
+  color: var(--color-secondary);
+}
+.night-mode td{
+  color: var(--color-background);
+}
+.t_features {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.t_features th{
+  background-color: var(--color-primary);
+  color:var(--color-background);
+}
+.t_features th, td {
+  border: 3px solid var(--color-primary);
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+.reviews-section{
+  border: 3px solid var(--color-primary);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.comment{
+  border: 3px solid var(--color-primary);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+textarea, button{
+  color: var(--color-secondary);
+}
+.fa-cart-shopping{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  color: var(--color-accent);
+}

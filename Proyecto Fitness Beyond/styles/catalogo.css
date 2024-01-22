@@ -1,0 +1,192 @@
+/*
+Productos
+*/
+:root {
+  --color-primary: #681097;
+  --color-secondary: #080705;
+  --color-background: #FFFFFA;
+  --color-accent: #EDB230;
+  --color-terciary:#7D8491; 
+}
+.gallery h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 0.5em;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0;
+  }
+  .gallery h2 {
+    color: var(--color-background);
+    margin: 0;
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5em;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 20%;
+    margin: 1em;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    background: var(--color-background);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*Texto y luego imagen o dejar borde solo abajo*/
+  }
+  .content a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .content a:hover {
+    text-decoration: underline;
+  }
+  .night-mode .content{
+    background-color: var(--color-terciary);
+  }
+  .night-mode .content h3{
+    color: var(--color-background)
+  }
+  .content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -0.5em);
+    -webkit-transform: translate(0px, -0.5em);
+    -moz-transform: translate(0px, -0.5em);
+    -ms-transform: translate(0px, -0.5em);
+    -o-transform: translate(0px, -0.5em);
+  }
+  .content h3 {
+    font-size: 120%;
+    text-overflow: ellipsis;
+  }
+  .gallery img {
+    width: 9em;
+    height: 9em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .gallery ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  .gallery li {
+    padding-top: 5px;
+  }
+  .fa {
+    font-size: 1em;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    margin: 3px;
+  }
+  .fa-star {
+    color: var(--color-terciary);
+  }
+  .checked {
+    color: var(--color-accent);
+  }
+  .fa-star-half-o {
+    color: var(--color-accent);
+  }
+  .checked:hover,
+  .fa-star-half-o:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+  }
+  @media (max-width: 768px) {
+    .gallery {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .content {
+      width: calc(50% - 2em);
+      margin: 1em;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1280px) {
+    .gallery {
+      justify-content: space-between; /* Alineación distribuida */
+      flex-wrap: wrap; /* Permite que los elementos se ajusten a la pantalla */
+    }
+  
+    .content {
+      width: calc(
+        33.33% - 2em
+      ); /* 4 elementos en una fila, con espacio entre ellos */
+      margin: 1em;
+    }
+  }
+  
+  @media (min-width: 1281px) {
+    .gallery {
+      justify-content: space-between; /* Alineación distribuida */
+      flex-wrap: wrap; /* Permite que los elementos se ajusten a la pantalla */
+    }
+  
+    .content {
+      width: calc(
+        25% - 2em
+      ); /* 5 elementos en una fila, con espacio entre ellos */
+      margin: 1em;
+    }
+  }
+  /*boton recetario*/
+  #btn_recetario{
+    position: absolute;
+    padding: 0;
+    margin-top: -10em;
+    top: 15em;
+    left:50%;
+    background-color: var(--color-primary);
+  }
+  #btn_recetario h2{
+    color: var(--color-secondary);
+  }
+  #btn_recetario:hover h2{
+    color: var(--color-accent);
+  }

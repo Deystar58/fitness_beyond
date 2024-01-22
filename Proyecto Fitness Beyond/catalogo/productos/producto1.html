@@ -1,0 +1,242 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html><!--index recetario-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" >
+    <link rel="stylesheet" href="/styles/producto.css">
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="/images/BEYOND_LOGO-8.png" alt="logo">
+        <div class="logo"><a href="/Index.html">Fitness Beyond</a></div>
+        <ul class="links" >
+          <li><a href="/Index.html">Quiénes Somos</a></li>
+          <li><a href="/catalogo/index.html">Servicios</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <ul style="margin-right: 1em;">
+            <li><input type="text" placeholder="Nombre de usuario" class="login-input"></li>
+          <li><input type="password" placeholder="Contraseña" class="login-input"></li>
+          <li style="margin-top: 0.5em;"> <a href="#" class="action_btn">Iniciar Sesión</a></li>
+          </ul>
+        </ul>
+        <a href="/perfil/index.html" class="action_btn">Perfil</a>
+        <label class="night" id="night-mode-btn">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div class="dropdown_menu open" id="dropdown-menu">
+        <label class="night" for="night-mode-btn-dropdown">
+          <input type="checkbox" id="night-mode-btn-dropdown">
+          <span class="slider"></span>
+        </label>
+          <li><a href="/Index.html">Quiénes Somos</a></li>
+          <li><a href="/catalogo/index.html">Servicios</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <li> <a href="/perfil/index.html" class="action_btn">Perfil</a></li>
+          <li><input type="text" placeholder="Nombre de usuario" class="login-input"></li>
+          <li><input type="password" placeholder="Contraseña" class="login-input"></li>
+          <li> <a href="#" class="action_btn">Iniciar Sesión</a></li>
+      </div>
+    </header>
+        <main class="main_index">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Producto</li>
+            </ol>
+          </nav>
+          <div class="container">
+            <div class="card">
+              <div class="container-fliud">
+                <div class="wrapper row">
+                  <div class="preview col-md-6">
+                    <div class="preview-pic tab-content">
+                      
+                    <h3 class="product-title">Recetario</h3>
+                    <a href="../../carrito/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                      <div class="tab-pane active" id="pic-1"><img src="/images/recetas/recetario_basico.jpeg" /></div>
+                      <div class="tab-pane" id="pic-2"><img src="/images/recetas/o_oats.jpg" /></div>
+                      <div class="tab-pane" id="pic-3"><img src="/images/recetas/Pulpo_vinagreta.jpg" /></div>
+                      <div class="tab-pane" id="pic-4"><img src="/images/recetas/pia_serrano.jpg" /></div>
+                      <div class="tab-pane" id="pic-5"><img src="/images/recetas/b_tikka.jpg" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                      <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="/images/recetas/recetario_basico.jpeg" /></a></li>
+                      <li><a data-target="#pic-2" data-toggle="tab"><img src="/images/recetas/o_oats.jpg" /></a></li>
+                      <li><a data-target="#pic-3" data-toggle="tab"><img src="/images/recetas/Pulpo_vinagreta.jpg" /></a></li>
+                      <li><a data-target="#pic-4" data-toggle="tab"><img src="/images/recetas/pia_serrano.jpg" /></a></li>
+                      <li><a data-target="#pic-5" data-toggle="tab"><img src="/images/recetas/b_tikka.jpg" /></a></li>
+                    </ul>
+                    
+                  </div>
+                  <div class="details col-md-6">
+                    <div class="rating">
+                      <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-o"></span>
+                      </div>
+                      <span class="review-no">41 reviews</span>
+                    </div>
+                    <p class="product-description">Libro electrónico con todas recetas de nuestra web, incluidas en único documento.</p>
+                    <h4 class="price" id="precio">Especial Black Friday: <del>69,99€</del> <span>39,99€</span><br><strong>(Incluye IGIC)</strong></h4>
+                    <p class="vote">Al <strong>91%</strong> de los clientes les gusta este producto! <strong>(87 votos)</strong></p>
+                    <h5 class="formats">Formatos:
+                        <select id="format">
+                            <option value="formato-basico">Formato básico</option>
+                            <option value="formato-digital">Formato completo digital</option>
+                            <option value="formato-fisico">Formato físico completo</option>
+                        </select>
+                        <button id="infoButton" class="info-icon">
+                          <i class="fas fa-info-circle"></i>
+                        </button>
+                    </h5>
+                    <h5 class="qty">Cantidad:
+                      <select name="" id="qty">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </h5>
+                    <div class="action">
+                      <button class="add-to-cart btn btn-default" type="button">Añadir al carrito</button>
+                      <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="technical-features">
+              <table class="t_features">
+                <thead>
+                  <tr>
+                    <th>Incluye</th>
+                    <th>Básico</th>
+                    <th>Digital</th>
+                    <th>Libro</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Documento PDF</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td>Recetas principales</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td>Colección completa de recetas</td>
+                    <td>&#10007;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td>Calorías de las recetas</td>
+                    <td>&#10007;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td>Dietas regularizadas y Especificaciones de usuario</td>
+                    <td>&#10007;</td>
+                    <td>&#10003;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td>Versión física tapa dura</td>
+                    <td>&#10007;</td>
+                    <td>&#10007;</td>
+                    <td>&#10003;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="reviews-section">
+              <h3>Comentarios</h3>
+              <div class="comment">
+                  <div class="user-info">
+                      <h4>Suso23</h4>
+                      <div class="stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star-half-o"></span>
+                      </div>
+                  </div>
+                  <p>He conseguido llevar una dieta más equilibrada con los consejos que incluye!</p>
+              </div>
+              <div class="comment">
+                  <div class="user-info">
+                      <h4>Lepe</h4>
+                      <div class="stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                      </div>
+                  </div>
+                  <p>No consigo sguir bien sus pasos, pero las recetas son buenísimas.</p>
+              </div>
+          
+              <!-- Área para crear comentarios -->
+              <div class="create-comment">
+                  <h3>Deja tu comentario</h3>
+                  <div class="stars" onclick="selectStar(event)">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                 <textarea placeholder="Your comment"></textarea>
+                  <button>Enviar</button>
+              </div>
+          </div>
+          
+          </div>
+        </main>
+    <footer >
+      <h2 id="contacto">Información de contacto</h2>
+          <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="#">Programas de Entrenamiento</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+          <div class="container-buttons">
+            <a href="#" class="two"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
+            <a href="#" class="four"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
+          </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a7d1ad6a60.js" crossorigin="anonymous"></script>
+    <script src="/js/beyond.js"></script>
+  </body>
+</html>
