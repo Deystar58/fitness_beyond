@@ -368,16 +368,16 @@ footer content {
 }
 
 /* Color de fondo de los botones */
-a.two {
+a.facebook {
   background-color: var(--color-accent);
 }
-a.three {
+a.ig {
   background-color: var(--color-accent);
 }
-a.four {
+a.mail {
   background-color: var(--color-accent);
 }
-a.five {
+a.top {
   background-color: var(--color-accent);
 }
 /*breadcrumb*/

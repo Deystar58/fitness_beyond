@@ -51,45 +51,46 @@
             </li>
           </ul>
         </ul>
-        <a href="/perfil/index.html" class="action_btn"
-          >Perfil</a
-        >
-        <label class="night" id="night-mode-btn">
-          <input type="checkbox" />
+        <a href="/perfil/index.html" class="action_btn">Perfil</a>
+        <label class="night" for="night-mode-btn-dropdown">
+          <input type="checkbox" id="night-mode-btn-dropdown" />
           <span class="slider"></span>
         </label>
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
       </div>
       <div class="dropdown_menu open" id="dropdown-menu">
-        <label class="night" for="night-mode-btn-dropdown">
-          <input type="checkbox" id="night-mode-btn-dropdown" />
+        <label class="night" for="night-mode-toggle" id="night-mode-btn">
+          Modo Nocturno
+          <input type="checkbox" id="night-mode-toggle" />
           <span class="slider"></span>
         </label>
-        <li><a href="/Index.html">Quiénes Somos</a></li>
-        <li>
-          <a href="/catalogo/index.html">Servicios</a>
-        </li>
-        <li><a href="">Promociones</a></li>
-        <li><a href="">Noticias</a></li>
-        <li><a href="">Redes Sociales</a></li>
-        <li>
-          <a
-            href="/perfil/index.html"
-            class="action_btn"
-            >Perfil</a
-          >
-        </li>
-        <li>
-          <input
-            type="text"
-            placeholder="Nombre de usuario"
-            class="login-input"
-          />
-        </li>
-        <li>
-          <input type="password" placeholder="Contraseña" class="login-input" />
-        </li>
-        <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        <ul>
+          <li><a href="/Index.html">Quiénes Somos</a></li>
+          <li>
+            <a href="/catalogo/index.html">Servicios</a>
+          </li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <li>
+            <a href="/perfil/index.html" class="action_btn">Perfil</a>
+          </li>
+          <li>
+            <input
+              type="text"
+              placeholder="Nombre de usuario"
+              class="login-input"
+            />
+          </li>
+          <li>
+            <input
+              type="password"
+              placeholder="Contraseña"
+              class="login-input"
+            />
+          </li>
+          <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -104,10 +105,17 @@
       <h1>Carrito</h1>
       <div class="carrito">
         <div class="item">
-          <img src="/images/recetas/recetario_digital_completo.jpeg" alt="Producto 1" />
+          <img
+            src="/images/recetas/recetario_digital_completo.jpeg"
+            alt="Producto 1"
+          />
           <div>Recetario Digital</div>
-          <div><del>69,99€</del> <span>39,99€</span><br>Recetario digital completo</div>
-          cantidad:<select>
+          <div>
+            <del>69,99€</del> <span>39,99€</span><br />Recetario digital
+            completo
+          </div>
+          <label for="cantidad1">Cantidad:</label>
+          <select id="cantidad1">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -118,34 +126,46 @@
           <i class="fa-solid fa-arrow-up-from-bracket"></i>
           </div>
           <div class="item">
-          <img src="/images/recetas/recetario.jpg" alt="Producto 2" />
-          <div>Libro recetas</div>
-          <div><del>79,99€</del> <span>59,99€</span><br>Recetario completo <br>(formato libro)</div>
-          cantidad:<select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
+            <img src="/images/recetas/recetario.jpg" alt="Producto 2" />
+            <div>Libro recetas</div>
+            <div>
+              <del>79,99€</del> <span>59,99€</span><br />Recetario completo
+              <br />(formato libro)
+            </div>
+            <label for="cantidad2">Cantidad:</label>
+            <select id="cantidad2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          
           <i class="fa-solid fa-trash"></i>
           <i class="fa-solid fa-arrow-up-from-bracket"></i>
         </div>
-       <div class="arrows ">
-        <a href="/catalogo/productos/producto1.html"><i class="fa-solid fa-arrow-left-long"></i></a>
-        <a href="destinatario.html" class="arrow-right"><i class="fa-solid fa-arrow-right-long "></i></a>
-       </div>
-       <h3>Productos Similares</h3>
-       <div class="item similar">
-        <div><img src="/images/recetas/recetario_basico.jpeg" alt="Producto 1" />
-          <div>Recetario Digital básico</div>
-          <i class="fa-solid fa-plus"></i></div>
-        <div><img src="/images/fondo_movil.jpg" alt="Producto 1" />
-          <div>Plan de entrenamiento</div>
-          <i class="fa-solid fa-plus"></i></div>
-       </div>
+        <div class="arrows">
+          <a href="/catalogo/productos/producto1.html" aria-label="volver"
+            ><i class="fa-solid fa-arrow-left-long"></i
+          ></a>
+          <a href="destinatario.html" class="arrow-right" aria-label="continuar"
+            ><i class="fa-solid fa-arrow-right-long"></i
+          ></a>
         </div>
-        
+        <h2>Productos Similares</h2>
+        <div class="item similar">
+          <div>
+            <img src="/images/recetas/recetario_basico.jpeg" alt="Producto 1" />
+            <div>Recetario Digital básico</div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div>
+            <img src="/images/fondo_movil.jpg" alt="Producto 1" />
+            <div>Plan de entrenamiento</div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <h2 id="contacto">Información de contacto</h2>
@@ -158,10 +178,18 @@
         <li><a href="#">Contáctanos</a></li>
       </ul>
       <div class="container-buttons">
-        <a href="#" class="two"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
-        <a href="#" class="four"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
+        <a href="#" class="facebook" aria-label="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="#" class="ig" aria-label="Correo electrónico"
+          ><i class="fa fa-envelope-open"></i
+        ></a>
+        <a href="#" class="mail" aria-label="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="#" class="top" aria-label="Ir arriba"
+          ><i class="fa fa-arrow-up"></i
+        ></a>
       </div>
     </footer>
     <script

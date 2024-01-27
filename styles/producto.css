@@ -10,6 +10,7 @@ así que investigaré de cara a la siguiente entrega para adaptar el estilo comp
   }
 body{
     overflow-x: hidden;
+    background-color: var(--color-terciary);
 }
 img {
     max-width: 100%; }

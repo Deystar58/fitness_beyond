@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="navbar">
-        <img src="/images/BEYOND_LOGO-8.png" alt="logo" />
+        <img src="images/BEYOND_LOGO-8.png" alt="logo" />
         <div class="logo"><a href="/Index.html">Fitness Beyond</a></div>
         <ul class="links">
           <li><a href="Index.html">Quiénes Somos</a></li>
@@ -19,31 +19,25 @@
           <li><a href="">Promociones</a></li>
           <li><a href="">Noticias</a></li>
           <li><a href="">Redes Sociales</a></li>
-          <ul style="margin-right: 1em">
-            <li>
-              <input
-                type="text"
-                placeholder="Nombre de usuario"
-                class="login-input"
-              />
-            </li>
-            <li>
-              <input
-                type="password"
-                placeholder="Contraseña"
-                class="login-input"
-              />
-            </li>
-            <li style="margin-top: 0.5em">
+      </ul>
+      <ul class="links" style="margin-right: 1em">
+          <li>
+              <input type="text" placeholder="Nombre de usuario" class="login-input" />
+          </li>
+          <li>
+              <input type="password" placeholder="Contraseña" class="login-input" />
+          </li>
+          <li style="margin-top: 0.5em">
               <a href="#" class="action_btn">Iniciar Sesión</a>
-            </li>
-          </ul>
-        </ul>
+          </li>
+      </ul>
+      
         <a href="perfil/index.html" class="action_btn">Perfil</a>
-        <label class="night" id="night-mode-btn">
-          <input type="checkbox" />
+        <label class="night" for="night-mode-btn-dropdown">
+          <input type="checkbox" id="night-mode-btn-dropdown" />
+          Modo Nocturno
           <span class="slider"></span>
-        </label>
+      </label>   
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
       </div>
       <div class="dropdown_menu open" id="dropdown-menu">
@@ -51,23 +45,28 @@
           <input type="checkbox" id="night-mode-btn-dropdown" />
           <span class="slider"></span>
         </label>
-        <li><a href="Index.html">Quiénes Somos</a></li>
-        <li><a href="catalogo/index.html">Servicios</a></li>
-        <li><a href="">Promociones</a></li>
-        <li><a href="">Noticias</a></li>
-        <li><a href="">Redes Sociales</a></li>
-        <li><a href="perfil/index.html" class="action_btn">Perfil</a></li>
-        <li>
-          <input
-            type="text"
-            placeholder="Nombre de usuario"
-            class="login-input"
-          />
-        </li>
-        <li>
-          <input type="password" placeholder="Contraseña" class="login-input" />
-        </li>
-        <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        <ul>
+          <li><a href="Index.html">Quiénes Somos</a></li>
+          <li><a href="catalogo/index.html">Servicios</a></li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <li><a href="perfil/index.html" class="action_btn">Perfil</a></li>
+          <li>
+            <input
+              type="text"
+              placeholder="Nombre de usuario"
+              class="login-input"/>
+          </li>
+          <li>
+            <input
+              type="password"
+              placeholder="Contraseña"
+              class="login-input"
+            />
+          </li>
+          <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        </ul>
       </div>
     </header>
     <section class="contenido_lateral">
@@ -157,11 +156,11 @@
         <li><a href="#">Contáctanos</a></li>
       </ul>
       <div class="container-buttons">
-        <a href="#" class="two"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
-        <a href="#" class="four"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
-      </div>
+        <a href="#" class="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="ig" aria-label="Correo electrónico"><i class="fa fa-envelope-open"></i></a>
+        <a href="#" class="mail" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="top" aria-label="Ir arriba"><i class="fa fa-arrow-up"></i></a>
+    </div>    
     </footer>
     <script
       src="https://kit.fontawesome.com/a7d1ad6a60.js"

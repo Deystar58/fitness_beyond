@@ -54,10 +54,11 @@
         <a href="/perfil/index.html" class="action_btn"
           >Perfil</a
         >
-        <label class="night" id="night-mode-btn">
-          <input type="checkbox" />
+        <label class="night" for="night-mode-toggle" id="night-mode-btn">
+          Modo Nocturno
+          <input type="checkbox" id="night-mode-toggle" />
           <span class="slider"></span>
-        </label>
+      </label>
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
       </div>
       <div class="dropdown_menu open" id="dropdown-menu">
@@ -65,7 +66,8 @@
           <input type="checkbox" id="night-mode-btn-dropdown" />
           <span class="slider"></span>
         </label>
-        <li><a href="/Index.html">Quiénes Somos</a></li>
+        <ul>
+          <li><a href="/Index.html">Quiénes Somos</a></li>
         <li>
           <a href="/catalogo/index.html">Servicios</a>
         </li>
@@ -90,6 +92,7 @@
           <input type="password" placeholder="Contraseña" class="login-input" />
         </li>
         <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -149,15 +152,16 @@
                   <input type="text" name="nombreUsuario" />
               </label>
           </div>
-          Enviar a:
-          <select name="direcciones">
-            <option value="direccion1">Dirección 1</option>
-            <option value="direccion2">Dirección 2</option>
-        </select>
+          <label for="direccion1">Selecciona una dirección:</label>
+<select id="direccion1" name="direcciones">
+  <option value="direccion1">Dirección 1</option>
+  <option value="direccion2">Dirección 2</option>
+</select>
+
         </div>
         <div class="arrows">
-          <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
-          <a href="pago.html" class="arrow-right"><i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="index.html" aria-label="volver"><i class="fa-solid fa-arrow-left-long" ></i></a>
+          <a href="pago.html" class="arrow-right" aria-label="continuar"><i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
          </div>
     </main>
@@ -172,11 +176,11 @@
         <li><a href="#">Contáctanos</a></li>
       </ul>
       <div class="container-buttons">
-        <a href="#" class="two"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="three"><i class="fa fa-envelope-open"></i></a>
-        <a href="#" class="four"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="five"><i class="fa fa-arrow-up"></i></a>
-      </div>
+        <a href="#" class="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="ig" aria-label="Correo electrónico"><i class="fa fa-envelope-open"></i></a>
+        <a href="#" class="mail" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="top" aria-label="Ir arriba"><i class="fa fa-arrow-up"></i></a>
+    </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/a7d1ad6a60.js"
