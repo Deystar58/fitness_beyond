@@ -190,3 +190,15 @@ let descuentoAplicado = false;
         // Asigna la fecha al elemento
         fechaElemento.textContent = formatoFecha;
     }
+    //autoplay video
+    $(document).ready(function() {
+      $(window).scroll(function() {
+          var videoPosition = $('#video').offset().top;
+          var windowPosition = $(window).scrollTop();
+          if (windowPosition > videoPosition - 500) {
+              var iframe = document.getElementById('video');
+              iframe.src = iframe.src + "&autoplay=1";
+          }
+      });
+  });
+  

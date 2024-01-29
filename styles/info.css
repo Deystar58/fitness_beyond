@@ -1,0 +1,38 @@
+#video
+ {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: fit-content;
+}
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#photos img {
+    flex: 1 0 calc(50% - 2em); /* Ocupa el 50% del espacio disponible, menos 2em para el margen */
+    margin: 1em; /* Añade una separación de 1em alrededor de cada imagen */
+    max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
+}
+@media (max-width: 425px) {
+    #photos img{
+        flex: 1 0 calc(10% - 2em); /* Ocupa el 33.33% del espacio disponible, menos 2em para el margen */
+    }    
+}
+@media (min-width: 426px) and (max-width: 767px) {
+    #photos img {
+        flex: 1 0 calc(33.33% - 2em); /* Ocupa el 33.33% del espacio disponible, menos 2em para el margen */
+    }
+}
+
+@media (min-width: 768px) {
+    #photos img {
+        flex: 1 0 calc(25% - 2em); /* Ocupa el 25% del espacio disponible, menos 2em para el margen */
+    }
+}
+
+
+
