@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="../styles/info.css"
-    />
+    <link rel="stylesheet" href="../styles/info.css" />
     <title>Quiénes Somos</title>
   </head>
   <body>
     <header>
       <div class="navbar">
-        <img
-          src="../images/BEYOND_LOGO-8.png"
-          alt="logo"
-        />
+        <img src="../images/BEYOND_LOGO-8.png" alt="logo" />
         <div class="logo"><a href="../index.html">Fitness Beyond</a></div>
         <ul class="links">
           <li>
-            <a href="index.html">Quiénes Somos</a>
+            <a href="../info/index.html">Quiénes Somos</a>
           </li>
           <li>
             <a href="../catalogo/index.html">Servicios</a>
@@ -29,8 +23,7 @@
           <li><a href="">Promociones</a></li>
           <li><a href="">Noticias</a></li>
           <li><a href="">Redes Sociales</a></li>
-        </ul>
-        <ul class="links" style="margin-right: 1em">
+          <ul style="margin-right: 1em">
           <li>
             <label for="nombreUsuario"></label>
             <input
@@ -57,15 +50,13 @@
             <a href="#" class="action_btn">Iniciar Sesión</a>
           </li>
         </ul>
-        <a href="/perfil/index.html" class="action_btn"
-          >Perfil</a
-        >
-        <label class="night" for="night-mode-btn-dropdown">
-          <input type="checkbox" id="night-mode-btn-dropdown" />
-          Modo Nocturno
+      </ul>
+        <a href="/perfil/index.html" class="action_btn">Perfil</a>
+        <label class="night" for="night-mode-toggle" id="night-mode-btn">
+          <input type="checkbox" id="night-mode-toggle" />
           <span class="slider"></span>
-      </label>
-      
+        </label>
+
         <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
       </div>
       <div class="dropdown_menu open" id="dropdown-menu">
@@ -73,104 +64,177 @@
           <input type="checkbox" id="night-mode-btn-dropdown" />
           <span class="slider"></span>
         </label>
-        <li><a href="../index.html">Quiénes Somos</a></li>
-        <li>
-          <a href="../catalogo/index.html">Servicios</a>
-        </li>
-        <li><a href="">Promociones</a></li>
-        <li><a href="">Noticias</a></li>
-        <li><a href="">Redes Sociales</a></li>
-        <li>
-          <a
-            href="../perfil/index.html"
-            class="action_btn"
-            >Perfil</a
-          >
-        </li>
-        <li>
-          <label for="nombreUsuario"></label>
-          <input
-            name=""
-            type="text"
-            name="nombreUsuario"
-            id="nombreUsuario"
-            placeholder="Nombre de usuario"
-            class="login-input"
-          />
-        </li>
-        <li>
-          <label for="contrasena"></label>
-          <input
-            name=""
-            type="password"
-            name="nombreUsuario"
-            id="contrasena"
-            placeholder="Contraseña"
-            class="login-input"
-          />
-        </li>
-        <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        <ul>
+          <li><a href="../info/index.html">Quiénes Somos</a></li>
+          <li>
+            <a href="../catalogo/index.html">Servicios</a>
+          </li>
+          <li><a href="">Promociones</a></li>
+          <li><a href="">Noticias</a></li>
+          <li><a href="">Redes Sociales</a></li>
+          <li>
+            <a href="../perfil/index.html" class="action_btn">Perfil</a>
+          </li>
+          <li>
+            <label for="nombreUsuario"></label>
+            <input
+              name=""
+              type="text"
+              name="nombreUsuario"
+              id="nombreUsuario"
+              placeholder="Nombre de usuario"
+              class="login-input"
+            />
+          </li>
+          <li>
+            <label for="contrasena"></label>
+            <input
+              name=""
+              type="password"
+              name="nombreUsuario"
+              id="contrasena"
+              placeholder="Contraseña"
+              class="login-input"
+            />
+          </li>
+          <li><a href="#" class="action_btn">Iniciar Sesión</a></li>
+        </ul>
       </div>
     </header>
-    <h1>Información sobre actividad comercial</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div id="photos">
-        <img src="../images/info/acheron.jpg" alt="Foto 1">
-    <img src="../images/info/sophiejpg.jpg" alt="Foto 2">
-    <img src="../images/info/zelda.jpg" alt="Foto 3">
-    <img src="../images/info/grafico_contrratos_2023.png" alt="Gráfico 1">
-    <img src="../images/info/ventas.jpg" alt="Gráfico 2">
-    <img src="../images/info/sw.jpg" alt="Imagen Decorativa">
-
-    </div>
     <h2>Equipo Profesional</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <h2>Historia</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div id="photos">
+      <img src="../images/info/acheron.jpg" alt="Foto 1" />
+      <img src="../images/info/sophiejpg.jpg" alt="Foto 2" />
+      <img src="../images/info/zelda.jpg" alt="Foto 3" />
+      <img src="../images/info/grafico_contrratos_2023.png" alt="Gráfico 1" />
+      <img src="../images/info/ventas.jpg" alt="Gráfico 2" />
+      <img src="../images/info/sw.jpg" alt="Imagen Decorativa" />
+    </div>
 
     <h2>Vídeo</h2>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QqpUqjIkRO8?si=sAnF87Tqt1vnbMoW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <h2>Tabla de Datos</h2>
-    <table>
+    <div id="video">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QqpUqjIkRO8?si=75eCWAbOGhTO3JQr"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div id="buttons">
+      <a id="presentacion" href="https://youtu.be/QqpUqjIkRO8"
+        ><button id="button1">Ver vídeo</button></a
+      >
+      <a id="transcripcion" href="transcripcion_equipo.html"
+        ><button id="button2">Transcripción Equipo</button></a
+      >
+    </div>
+    <h2>Equipo al completo</h2>
+    <div class="tabla">
+      <table class="t_features">
+        <caption>
+          Tabla con los cargos en la empresa y los que lo ocupan.
+        </caption>
         <tr>
-            <th>Columna 1</th>
-            <th>Columna 2</th>
-            <th>Columna 3</th>
-            <th>Columna 4</th>
-            <th>Columna 5</th>
+          <th>Encargados</th>
+          <th>Nutricionistas</th>
+          <th>Entrenadores</th>
+          <th>Coordinadores</th>
+          <th>Informáticos</th>
         </tr>
         <tr>
-            <td>Dato 1</td>
-            <td>Dato 2</td>
-            <td>Dato 3</td>
-            <td>Dato 4</td>
-            <td>Dato 5</td>
+          <td>Froilán</td>
+          <td>María</td>
+          <td>José</td>
+          <td>Lucía</td>
+          <td>Hache</td>
         </tr>
-        <!-- Añade más filas según sea necesario -->
-    </table>
+        <tr>
+          <td></td>
+          <td>Antonio</td>
+          <td>Carmen</td>
+          <td>Julia</td>
+          <td>Keliam</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Marta</td>
+          <td>Javier</td>
+          <td></td>
+          <td>Caesar</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Guillermo</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Alejandro</td>
+        </tr>
+      </table>
+    </div>
 
     <h2>Más Información</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <!-- Añade más párrafos según sea necesario -->
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
     <footer>
-        <h2 id="contacto">Información de contacto</h2>
-        <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
-        <ul class="footer-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de Nosotros</a></li>
-          <li><a href="#">Programas de Entrenamiento</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contáctanos</a></li>
-        </ul>
-        <div class="container-buttons">
-          <a href="#" class="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="ig" aria-label="Correo electrónico"><i class="fa fa-envelope-open"></i></a>
-          <a href="#" class="mail" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-          <a href="#" class="top" aria-label="Ir arriba"><i class="fa fa-arrow-up"></i></a>
-        </div>
-      </footer>
-      <script src="https://kit.fontawesome.com/a7d1ad6a60.js" crossorigin="anonymous"></script>
-      <script src="../js/beyond.js"></script>
-    </body>
+      <h2 id="contacto">Información de contacto</h2>
+      <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+        <li><a href="#">Programas de Entrenamiento</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+      <div class="container-buttons">
+        <a href="#" class="facebook" aria-label="Facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="#" class="ig" aria-label="Correo electrónico"
+          ><i class="fa fa-envelope-open"></i
+        ></a>
+        <a href="#" class="mail" aria-label="Instagram"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="#" class="top" aria-label="Ir arriba"
+          ><i class="fa fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/a7d1ad6a60.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/beyond.js"></script>
+  </body>
 </html>

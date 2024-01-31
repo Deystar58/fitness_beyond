@@ -127,6 +127,7 @@ h3, h2, h4{
 /*HEADER*/
 header {
   background-color: var(--color-primary);
+  width: 100%;
   position: relative;
   padding: 0 2rem;
   padding-top: 1em;
@@ -250,7 +251,7 @@ header {
   background-color: var(--color-accent);
 }
 /*MAKE IT RESPONSIVE*/
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navbar .links,
   .navbar .action_btn {
     display: none;
@@ -291,14 +292,12 @@ footer {
   font-weight: bold;
   bottom: 0;
   width: 100%;
-  height: 15em;
-  padding: 20px;
+  height: 20em;
   text-align: center;
   font-size:medium;
 }
 
 footer p {
-
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   font-size: 20px;
@@ -330,12 +329,9 @@ footer content {
   color: var(--color-accent);
 }
 #contacto {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
   font-family: "Open Sans";
 }
 
@@ -366,7 +362,16 @@ footer content {
   margin-top: -5px; 
   box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.9);
 }
-
+@media (max-width: 768px) {
+  .container-buttons a{
+    width: 2.5em;
+    height: 1.5em;
+    font-size: 1.7em;
+  }
+  .container-buttons{
+    justify-content: space-evenly;
+  }
+}
 /* Color de fondo de los botones */
 a.facebook {
   background-color: var(--color-accent);

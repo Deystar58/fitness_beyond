@@ -201,4 +201,49 @@ let descuentoAplicado = false;
           }
       });
   });
+   // Carga la API de YouTube
+   var tag = document.createElement('script');
+   tag.src = "https://www.youtube.com/iframe_api";
+   var firstScriptTag = document.getElementsByTagName('script')[0];
+   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+ 
+   // Crea un reproductor de YouTube después de que la API se haya cargado
+   var player;
+   function onYouTubeIframeAPIReady() {
+     player = new YT.Player('player', {
+       height: '390',
+       width: '640',
+       videoId: 'QqpUqjIkRO8',
+       events: {
+         'onReady': onPlayerReady,
+         'onStateChange': onPlayerStateChange
+       }
+     });
+   }
+ 
+   // La API llamará a esta función cuando el reproductor esté listo
+   function onPlayerReady(event) {
+     event.target.playVideo();
+   }
+ 
+   // La API llama a esta función cuando cambia el estado del reproductor
+   function onPlayerStateChange(event) {
+     if (event.data == YT.PlayerState.PLAYING) {
+       // El video está reproduciéndose
+     }
+   }
+  //zoom texto
+  window.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault();
+      let fontSize = parseInt(window.getComputedStyle(document.body).fontSize);
+      if (e.deltaY < 0) {
+        fontSize += 1;
+      } else {
+        fontSize -= 1;
+      }
+      document.body.style.fontSize = fontSize + "px";
+    }
+  });
+  
   
